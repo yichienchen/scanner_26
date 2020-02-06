@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.scanner_26.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Bluetooth Scanners!\nThis is log file." />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Scan"
+        android:id="@+id/StartScanButton"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/StopScanButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Stop Scanning" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="300dp"
+        android:id="@+id/PeripheralTextView"
+        android:scrollbars="vertical"
+        android:maxLines="30" />
+
+    <Spinner
+        android:id="@+id/uuid_spinner"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_alignRight="@id/PeripheralTextView"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="40dp"
+        android:dropDownWidth="match_parent" />
+
+    <Button
+        android:id="@+id/change_to_list"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="500dp"
+        android:text="scan list" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/PeripheralTextView"
+         />
+
+</RelativeLayout>
